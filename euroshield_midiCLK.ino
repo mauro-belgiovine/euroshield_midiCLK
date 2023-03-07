@@ -171,6 +171,7 @@ void loop()
         if (prev_CLK_t < 0){
           prev_CLK_t = micros();
         }else{
+          
           /*
           CLK_t = micros();
           MCLK_p[count_CLK] = CLK_t - prev_CLK_t;
@@ -178,10 +179,6 @@ void loop()
           //Serial.print("MCLK_Itvl-"); Serial.print(count_CLK); Serial.print(" "); Serial.println(MCLK_p[count_CLK]);
           avg_p = average(MCLK_p, MCLK_STEPS);
           */
-          
-
-
-
 
           /*
           sum_p = sum_p - MCLK_p[count_CLK];
@@ -201,8 +198,6 @@ void loop()
           mult_idx = map(mult_idx, 0, 1023, 0, 10);
           waveform1.frequency((1.0/avg_p_secs)*CLK_MULT[mult_idx]);  // update frequency of clock
           */
-          
-
 
           /*
           if( prev_avg_p_secs == 0){
